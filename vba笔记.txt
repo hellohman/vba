@@ -27,5 +27,6 @@
         .Font.ColorIndex = 8                        '字体颜色
         .Font.Bold = True                           '加粗
         .Font.Size = 12                             '字号
+        .HorizontalAlignment = xlCenter             '居中 靠左: xlLeft  靠右: xlRight
         .Font.Underline = xlUnderlineStyleDouble    '下划线
     End With
