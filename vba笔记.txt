@@ -30,3 +30,7 @@
         .HorizontalAlignment = xlCenter             '居中 靠左: xlLeft  靠右: xlRight
         .Font.Underline = xlUnderlineStyleDouble    '下划线
     End With
+
+遍历Range：
+    For Each x In rangeName
+    Next
