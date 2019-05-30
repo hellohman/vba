@@ -1,0 +1,31 @@
+新建工作表并命名：
+    Sheets.Add
+    ActiveSheet.Name = "testSheet"
+
+获取最大行/列数：
+    max_row = Sheet1.UsedRange.Rows.Count
+    max_col = Sheet1.UsedRange.Columns.Count
+
+选择特定区域：
+    Dim xx
+    xx = 5
+    Sheets("sheet1").Activate
+    ActiveSheet.Range("a1:" & "a" & xx).Select
+
+复制粘贴：
+    全复制
+    Sheet1.Range("a1").Copy Sheet1.Range("d4")
+    Sheets("Sheet1").Range("1:1").Copy Sheets("新建的").Range("1:1")
+
+    只粘贴数值
+    Sheet1.Range("f4:f5") = Sheet1.Range("a1:a2").Value
+
+单元格属性：
+    With Sheets("新建的").Range("a" & new_sheet_row)
+        .Interior.ColorIndex = 3                    '背景颜色
+        .Font.Name = "微软雅黑"                     '字体
+        .Font.ColorIndex = 8                        '字体颜色
+        .Font.Bold = True                           '加粗
+        .Font.Size = 12                             '字号
+        .Font.Underline = xlUnderlineStyleDouble    '下划线
+    End With
