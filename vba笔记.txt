@@ -32,5 +32,5 @@
     End With
 
 遍历Range：
-    For Each x In rangeName
+    For Each x In rangeName '是一行行遍历的
     Next
